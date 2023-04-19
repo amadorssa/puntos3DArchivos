@@ -8,7 +8,7 @@ void userMenu(int choice) {
 
     string filename;
     int numPoints;
-    double points[numPoints][3];
+    double points[][3] = {{1, 2, 3}, {4, 5, 6}};
     string content;
     string newFilename;
     string newContent;
