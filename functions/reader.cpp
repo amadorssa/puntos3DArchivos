@@ -9,11 +9,14 @@ string readFile(string filename) {
     string content;
     char caracter;
    
-   while (file.get(caracter)) {
-        content += caracter;
+    if (file.is_open()) {
+
+        while (file.get(caracter)) {
+            content += caracter;
+        }
+    
+        file.close();
     }
-    
-    file.close();
-    
+
     return content;
 }
