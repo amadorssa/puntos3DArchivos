@@ -43,9 +43,9 @@ void userMenu(int choice) {
             content = readFile(filename);
 
             // Cambiar caracteres
-            // newContent = replaceChar(content);
-            newContent = content;
-            replaceChar(newContent);
+            newContent = replaceChar(content);
+            //newContent = content;
+            // replaceChar(newContent);
 
             // Nombre del archivo de salida
             cout << "Ingresa el nombre del archivo de salida --> ";
@@ -53,7 +53,7 @@ void userMenu(int choice) {
             newFilename = newFilename + ".txt";
             writeFileString(newFilename, newContent);
 
-            cout << "El archivo se copio con exito!" << endl;
+            cout << endl << "El archivo se copio con exito!" << endl;
             break;
         case 3: //Salir
             cout << "Adios chequetoo!" << endl;

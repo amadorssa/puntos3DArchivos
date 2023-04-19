@@ -27,9 +27,9 @@ void writeFileChar(int numberOfPoints, string filename, double points[][3]) {
             if (i == 0) {
                 file << "{";
             } else if (i != numberOfPoints - 1) {
-                file << "(" << points[i][0] << "," << points[i][1] << "," << points[i][2] << "), " << endl;
+                file << "(" << points[i][0] << "," << points[i][1] << "," << points[i][2] << ")," << endl;
             } else {
-                file << "(" << points[i][0] << "," << points[i][1] << "," << points[i][2] << ")} " << endl;
+                file << "(" << points[i][0] << "," << points[i][1] << "," << points[i][2] << ")}" << endl;
             }
         }
         file.close();
