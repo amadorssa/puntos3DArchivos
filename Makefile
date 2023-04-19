@@ -4,7 +4,6 @@ AUXILIARES := functions/menu.o \
 			functions/reader.o \
 			functions/writer.o
 
-
 main.exe: main.cpp $(AUXILIARES)
 	g++ -std=c++11  main.cpp $(AUXILIARES) -o main.exe
 
