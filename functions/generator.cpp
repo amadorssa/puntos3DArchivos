@@ -3,8 +3,7 @@
 #include <cmath>
 #include <random>
 #include "../mylib.h"
-
-
+//
 using namespace std;
 
 void generatePoints(int numberOfPoints, double points[][3]) {

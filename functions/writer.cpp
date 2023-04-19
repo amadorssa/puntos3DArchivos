@@ -1,8 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include "../mylib.h"
-
-
+//
 using namespace std;
 
 void writeFileString(string filename, string content) {
